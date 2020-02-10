@@ -1,0 +1,13 @@
+<h1 class="s0-title-1 ph-5">TREE by <span class="tc-1">Step</span><span class="tc-2">0</span></h1>
+
+<div class="fx ph-3 mt-6">
+  <div class="fx-1 ph-3">
+    <s0-tree [data]="tree" behavior="check-list" (selectionChange)="onTreeSelectionChange($event)"></s0-tree>
+  </div>
+  <div class="fx-1 ph-3">
+    <s0-tree [data]="tree" behavior="select" (selectionChange)="onTreeSelectionChange($event)"></s0-tree>
+  </div>
+  <div class="fx-1 ph-3">
+    <s0-tree [data]="tree" behavior="none" [selected]="treeSelection"></s0-tree>
+  </div>
+</div>
